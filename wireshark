@@ -3,4 +3,11 @@
 
 
 
-SCCP(skinny client control protocol) - used between 
+=> SCCP(skinny client control protocol)(port 2000 TCP) - used between the phone and the router.
+=> ESP(encapsulating security protocol)(port 4500 UDP) - is a member of internet protocol(IP sec) set of protocols that encrypt and authenticate the packets of data 
+       between computers using a virtual private network(VPN).
+=> ARP(address resolution protocol) - is a layer 2 protocol used to map MAC address to IP address. All hosts on a network are located by their IP addresses,
+       but NIC's do not have IP addresses, they have MAC addresses. ARP is the protocol used to associate the IP address to a MAC address. (no specific 
+       port nummber as it operates at the data link layer at the OSI model).
+       ARP packets are encapsulated within ethernet frames, which do have source and destination port numbers. The source port number is typically set to
+       0x0000, and the destination port number is set to 0x0806, which identifies the frame as an ARP packet.
